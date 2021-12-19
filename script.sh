@@ -3,8 +3,8 @@
 # Exit if any of the intermediate steps fail
 set -e
 
-# Extract "foo" and "baz" arguments from the input into
-# FOO and BAZ shell variables.
+# Extract "subscription" argument from the input into
+# SUBSCRIPTION shell variable.
 # jq will ensure that the values are properly quoted
 # and escaped for consumption by the shell.
 eval "$(jq -r '@sh "SUBSCRIPTION=\(.subscription)"')"
